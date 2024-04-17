@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<style>
+    body {
+        font-family: "pretendard", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            width: 1920px;
+            height: 93px;
+            flex-shrink: 0;
+            background: rgba(214, 230, 255, 0.40);
+            padding: 13px;
+            align-content: center;
+        }
+        .banner .text{
+            color: var(--Primary-Normal, #36C);
+            text-align: center;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .box {
+            display: flex;
+            flex-direction: column; /* Change flex-direction to row */
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            gap: 16px;
+            padding: 8px;
+        }
+        .box img {
+            width: 400px;
+            height: 300px;
+            border-radius: 16px;
+            background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
+        }
+        .box .group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            gap: 16px;
+        }
+        .box .top {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            padding: 24px;
+            gap: 10px;
+        }
+        .box .text-field-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Update justify-content to space-between */
+            font-size: 32px;
+            font-style: bold;
+            font-weight: 700;
+            line-height: 150%;
+        }
+        .box .text-field-caption {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Change align-items to center */
+            justify-content: space-between; /* Update justify-content to space-between */
+            font-size: 12px;
+        }
+        .box .middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px;
+            gap: 10px;
+        }
+        .box .text-field-caution {
+            color: #333;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 24px */
+            align-items: flex-start;
+        }
+        .box .bottom {
+            display: flex;
+            padding: 16px;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            gap: 8px;
+            border-radius: 8px;
+            background: rgba(214, 230, 255, 0.40);
+        }
+        .box .text-field-subtitle {
+            color: #333;
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: var(--Text-Heavy, #0000);
+            font-weight: 500;
+            line-height: 150%; /* 30px */;
+        }
+        .box .text-field-description {
+            color: #333;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 24px */;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 60px;
+            background: #36C;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="text">
+        한국에서 합법적으로 운전하기
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <img src="https://source.unsplash.com/1600x900/?road" alt="road">
+                <div class="group">
+                    <div class="top">
+                        <div class="text-field-title">
+                            국제 운전 면허증으로 운전하기
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="text-field-subtitle">
+                            이미 국제 운전면허증이 있나요?
+                        </div>
+                        <div class="text-field-description">
+                            본국의 면허증과 국제 운전면허증만 있으면 운전할 수 있어요
+                        </div>
+                    </div>
+                <a href="file:///C:/socar_2024/international_license.html" class="button" target="_blank">자세히 보기</a>
+                </div>
+        </div>
+        <div class="box">
+            <img src="https://source.unsplash.com/1600x900/?driver" alt="Drivers">
+                <div class="group">
+                    <div class="top">
+                        <div class="text-field-title">
+                            한국 운전면허 취득하기
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="text-field-subtitle">
+                            한국 면허, 외국인도 취득할 수 있어요
+                        </div>
+                        <div class="text-field-description">
+                            단 일주일만에 면허를 취득해보세요
+                        </div>
+                    </div>
+                    <a href="file:///C:/socar_2024/korean_license.html" class="button" target="_blank">자세히 보기</a>
+                </div>
+         </div>
+        <div class="box">
+            <img src="https://source.unsplash.com/1600x900/?car" alt="car Image">
+                <div class="group">
+                    <div class="top">
+                        <div class="text-field-title">
+                            본국 운전 면허로 운전하기
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="text-field-subtitle">
+                            본국의 운전면허를 한국 면허로 교환하세요
+                        </div>
+                        <div class="text-field-description">
+                            복잡한 서류 절차를 대행해드려요
+                        </div>
+                    </div>
+                    <a href="file:///C:/socar_2024/exchange_license.html" class="button" target="_blank">자세히 보기</a>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
